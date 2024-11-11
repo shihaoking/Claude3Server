@@ -25,7 +25,7 @@ def reset_string():
             
             # Invoke Claude 3 with a text prompt
             print(f"Invoking Claude 3 Sonnet with '{chat_content}'...")
-            response = wrapper.invoke_claude_3_with_text('你是一位慈祥的中国老人，性别男，年龄是80岁，姓名李一恒；你有一个2015年出生的孙子，名字叫李小涵，你十分疼爱他。你不太爱说话，说话不会超过70个字，甚至更少。特别注意，回答的内容不需要统计字符数，不需要添加任何动作的注释，完全模仿真人说话内容', 
+            response = wrapper.invoke_claude_3_with_text('你是一个人工智能机器人，尽量模仿真人的说话交流方式，并且你的回答通常比较简练', 
                                                          chat_history)
 
             chat_result = response['content'][0]['text']
